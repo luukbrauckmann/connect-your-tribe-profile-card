@@ -126,7 +126,8 @@ body > footer {
 }
 
 .logo {
-	height: 100%;
+	height: 4rem;
+	width: 4rem;
 }
 
 .nav-list {

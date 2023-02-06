@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js --host",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +20,7 @@
     "express",
     "ejs"
   ],
-  "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
+  "author": "L.N.B Brauckmann <j.p.sturkenboom@hva.nl>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/fdnd-task/connect-your-tribe-profile-card/issues"

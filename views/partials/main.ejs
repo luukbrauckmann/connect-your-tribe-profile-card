@@ -1,0 +1,29 @@
+<main>
+	<article class="card">
+		<header class="card__header">
+			<h2>Hi, Mijn naam is <%- locals.content.name %></h2>
+		</header>
+		<div class="card__content">
+			<img src="<%- locals.content.avatar %>" alt="Foto van Luuk Brauckmann">
+			<p><%- locals.content.bio.html %></p>
+		</div>
+	</article>
+
+	<ul class="socials__list">
+		<li class="socials__list__item">
+			<button class="button button--rounded button--text">
+				<i class="fa-brands fa-linkedin"></i>
+			</button>
+		</li>
+		<li class="socials__list__item">
+			<button class="button button--rounded button--text">
+				<i class="fa-brands fa-github"></i>
+			</button>
+		</li>
+		<li class="socials__list__item">
+			<button class="button button--rounded button--text">
+				<i class="fa-brands fa-codepen"></i>
+			</button>
+		</li>
+	</ul>
+</main>

@@ -1,56 +1,210 @@
+/* Imports */
+
+/* Font faces */
+
+/* Custom properties */
+:root {
+	--font-size: 1em;
+	--font-family: Arial, sans-serif;
+	--spacing: 1em;
+	--border-radius: .25em;
+
+	--primary-color: #009dff;
+	--secondary-color: #64748B;
+	--accent-color: #ff6200;
+	--accent-color: #FF00D0;
+
+	--gradient: linear-gradient(90deg, #009DFF, #FF00D0, #FF6200);
+	--text-on-background: white;
+
+	--card-background-color: rgba(255, 255, 255, .5);
+	--card-text-color: #000000;
+
+	--success-color: #22C55E;
+	--info-color: #3B82F6;
+	--warning-color: #F59E0B;
+	--danger-color: #EF4444;
+
+	--inline-padding: var();
+	--max-screen-size: 0;
+
+	--breakpoint-sm: 36em;
+	--breakpoint-md: 48em;
+	--breakpoint-lg: 62em;
+	--breakpoint-xl: 75em;
+}
+
+/* Defaults */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 * {
-  box-sizing: border-box;
-  margin: 0;
+	margin: 0;
+	padding: 0;
 }
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+html,
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background: rgba(188, 105, 138, 0.5);
-  background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
-    radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+	height: 100%;
+	font-size: var(--font-size);
+	font-family: var(--font-family);
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+body {
+	background: var(--gradient);
+	display: flex;
+	flex-flow: column;
 }
 
-article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
-  color: white;
-
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
+body > header,
+body > footer {
+	flex: 0 1 auto;
 }
 
-h1 {
-  text-align: center;
+body > main {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+body > header,
+body > main,
+body > footer {
+	padding-inline: calc(100vw - var(--active-breakpoint));
+}
+
+/* Custom styling */
+
+body > header {
+	display: flex;
+	justify-content: space-between;
+}
+
+body > footer {
+	padding: 1rem;
+	background-color: #002237;
+	color: white;
+}
+
+.duotone .duotone-group .primary,
+.duotone .duotone-group .secondary {
+	fill: var(--text-on-background);
+}
+.duotone .duotone-group .secondary {
+	opacity: .4;
+}
+
+.button {
+	padding: 1em;
+	cursor: pointer;
+	background: var(--card-background-color);
+	border: 1px solid var(--card-background-color);
+	transition: all .2s ease-out;
+}
+
+.button--text {
+	border-color: transparent;
+	background: transparent;
+}
+
+.button--text:hover {
+	border-color: var(--card-background-color);
+	background: var(--card-background-color);
+	transition-timing-function: ease-in;
+}
+
+.button--rounded {
+	border-radius: 50%;
+}
+
+.body-heading {
+	padding: 1rem;
+}
+
+.logo {
+	height: 100%;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-list__item {
+	padding: 1rem;
+}
+
+.nav-list__item .svg-inline--fa {
+	height: 2em;
+	width: 2em;
+	color: var(--text-on-background);
+}
+
+.card {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 500px;
+	padding: 1rem;
+	border-radius: 1rem;
+	background: var(--card-background-color);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.socials__list {
+	list-style: none;
+	display: inline-flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.socials__list__item .svg-inline--fa {
+	height: 2em;
+	width: 2em;
+	color: var(--text-on-background);
+}
+
+/*  Media queries */
+
+/* - Small */
+@media (min-width: 576px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-sm))
+	}
+}
+
+/* - Medium */
+@media (min-width: 768px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-md))
+	}
+}
+
+/* - Large */
+@media (min-width: 992px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-lg))
+	}
+}
+
+/* - Extra Large */
+@media (min-width: 1200px) {
+	:root {
+		--active-breakpoint: var(var(--breakpoint-xl))
+	}
 }

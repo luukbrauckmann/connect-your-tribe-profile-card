@@ -1,8 +1,26 @@
-<%- include('./partials/head') %>
+<!DOCTYPE html>
+<html lang="en">
 
-<article>
-  <h1>Hallo wereld!</h1>
-  <p>Alles werk! Laat dit visitekaartje in je browser aan een docent zien :D</p>
-</article>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Visitekaartje</title>
+	<meta name="description" content="Visitekaartje van Luuk Brauckmann">
+	<meta name="keywords" content="Node, Express, EJS">
+	<meta name="author" content="Luuk Brauckmann">
+	<meta name="theme-color" content="#009dff" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<%- include('./partials/foot') %>
+	<link rel="stylesheet" href="/style.css" />
+
+	<script src="/icons/fontawesome.min.js"></script>
+	<script src="/icons/duotone.min.js"></script>
+	<script src="/icons/brands.min.js"></script>
+</head>
+
+<body>
+	<%- include('./partials/header') %>
+	<%- include('./partials/main') %>
+</body>
+
+</html>

@@ -74,12 +74,7 @@ body > main {
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-}
-
-body > header,
-body > main,
-body > footer {
-	padding-inline: calc(100vw - var(--active-breakpoint));
+	padding: 1rem;
 }
 
 /* Custom styling */
@@ -144,8 +139,8 @@ body > footer {
 }
 
 .nav-list__item .svg-inline--fa {
-	height: 2em;
-	width: 2em;
+	height: 2rem;
+	width: 2rem;
 	color: var(--text-on-background);
 }
 
@@ -153,7 +148,6 @@ body > footer {
 	display: inline-flex;
 	flex-direction: column;
 	gap: 1rem;
-	width: 500px;
 	padding: 1rem;
 	border-radius: 1rem;
 	background: var(--card-background-color);
@@ -161,8 +155,8 @@ body > footer {
 }
 
 .card__content {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: column;
 	gap: 1rem;
 }
 

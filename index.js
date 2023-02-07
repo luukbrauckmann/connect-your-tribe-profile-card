@@ -1,4 +1,6 @@
 import express from 'express'
+import compression from 'compression'
+import helmet from 'helmet'
 
 const app = express()
 const uuid = 'cldenz5o53s900auo8wumyspq'
@@ -6,6 +8,8 @@ const uuid = 'cldenz5o53s900auo8wumyspq'
 app.set('view engine', 'ejs')
 app.set('views', './views')
 
+app.use(compression())
+app.use(helmet())
 app.use(express.static('public'))
 
 app.get('/', async (_req, res) => {

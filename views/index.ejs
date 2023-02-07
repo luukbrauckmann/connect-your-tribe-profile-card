@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 
 <head>
 	<meta charset="UTF-8" />
@@ -10,17 +10,35 @@
 	<meta name="author" content="Luuk Brauckmann">
 	<meta name="theme-color" content="#009dff" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
 
 	<link rel="stylesheet" href="/style.css" />
 
-	<script src="/icons/fontawesome.min.js"></script>
-	<script src="/icons/duotone.min.js"></script>
-	<script src="/icons/brands.min.js"></script>
+	<script src="/icons/fontawesome.min.js" defer></script>
+	<script src="/icons/duotone.min.js" defer ></script>
+	<script src="/icons/brands.min.js" defer ></script>
 </head>
 
-<body>
+<body class="light">
 	<%- include('./partials/header') %>
 	<%- include('./partials/main') %>
 </body>
+
+<script>
+	const darkSchemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches
+	if (darkSchemePreferred) {
+		document.documentElement.classList.add('dark')
+		document.documentElement.classList.remove('light')
+	}
+
+	addEventListener('click', (event) => {
+		const { target } = event
+
+		if (!target.matches('button') || target.id != 'theme-changer') return
+
+		document.documentElement.classList.toggle('dark')
+		document.documentElement.classList.toggle('light')
+	})
+</script>
 
 </html>

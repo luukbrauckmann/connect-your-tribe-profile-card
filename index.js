@@ -10,7 +10,7 @@ app.set('views', './views')
 
 app.use(compression())
 app.use(helmet())
-app.use(express.static('public'))
+app.use(express.static('static'))
 
 app.get('/', async (_req, res) => {
 	let content = null

@@ -1,6 +1,7 @@
-import express from 'express'
-import compression from 'compression'
-import helmet from 'helmet'
+const functions = require("firebase-functions");
+const express = require('express')
+const compression = require('compression')
+const helmet = require('helmet')
 
 const app = express()
 const uuid = 'cldenz5o53s900auo8wumyspq'
@@ -22,6 +23,4 @@ app.get('/', async (_req, res) => {
 	res.render('index', { content })
 })
 
-app.set('port', process.env.PORT || 8000)
-
-app.listen(app.get('port'), () => console.log(`Application started on http://localhost:${app.get('port')}`))
+exports.app = functions.https.onRequest(app)

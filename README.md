@@ -43,10 +43,12 @@ Tools
 
 Technieken
 - Express JS (Framework)
-- Embedded JavaScript templating (Javascript Build Tool)
+- Embedded JavaScript Templating (Javascript Build Tool)
 - Font Awesome (Icons)
 - NPM (Package manager)
 - HTML (Markup)
+- CSS (Styling)
+- JavaScript (Interactivity)
 
 <h2 id="installatie">📥 Installatie</h2>
 
@@ -54,6 +56,8 @@ Technieken
 
 <h2 id="bronnen">🌍 Bronnen</h2>
 
+- [Express JS](https://expressjs.com/)
+- [Embedded JavaScript Templating](https://ejs.co/)
 - [Font Awesome](https://fontawesome.com/)
 
 <h2 id="licenties">🪪 Licenties</h2>

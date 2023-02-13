@@ -3,6 +3,7 @@
   <span>Luuk Brauckmann</span>
 </h1>
 
+![image](https://user-images.githubusercontent.com/47314813/218473330-b2ffe8bf-cd32-4a76-a09a-6c0c9b1cb22e.png)
 ![image](https://user-images.githubusercontent.com/47314813/218473207-49481694-f162-44a2-863e-7958d3be9144.png)
 
 

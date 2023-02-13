@@ -1,31 +1,58 @@
-# Visitekaartje van Luuk Brauckmann
+<h1>
+  <img src="https://user-images.githubusercontent.com/47314813/214880490-f9031164-14f2-485c-9e3a-d1fe5c9c40d7.png" style="height: 1em;">
+  <span>Luuk Brauckmann</span>
+</h1>
 
-## Inhoudsopgave
+***
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+<h2 id="inhoud">📦 Inhoud</h2>
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+<ol>
+  <li>
+    <a href="#beschrijving">Beschrijving</a>
+  </li>
+  <li>
+    <a href="#kenmerken">Kenmerken</a>
+  </li>
+  <li>
+    <a href="#installatie">Installatie</a>
+  </li>
+  <li>
+    <a href="#bronnen">Bronnen</a>
+  </li>
+  <li>
+    <a href="#licenties">Licenties</a>
+  </li>
+</ol>
 
-## Installatie
 
-## Gebruik
+<h2 id="beschrijving">ℹ️ Beschrijving</h2>
 
-## Bronnen
+***
 
-- [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+<h2 id="kenmerken">✨ Kenmerken</h2>
 
-## Licentie
+Hier een lijst met de tools & technieken.
+
+Tools
+- Visual Studio Code (Code editor)
+- Polypane (Browser)
+
+Technieken
+- Font Awesome (Icons)
+- NPM (Package manager)
+- HTML (Markup)
+
+<h2 id="installatie">📥 Installatie</h2>
+
+***
+
+<h2 id="bronnen">🌍 Bronnen</h2>
+
+- [Font Awesome](https://fontawesome.com/)
+
+<h2 id="licenties">🪪 Licenties</h2>
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 

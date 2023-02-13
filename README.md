@@ -3,8 +3,7 @@
   <span>Luuk Brauckmann</span>
 </h1>
 
-***
-
+![image](https://user-images.githubusercontent.com/47314813/218473207-49481694-f162-44a2-863e-7958d3be9144.png)
 
 
 <h2 id="inhoud">📦 Inhoud</h2>
@@ -38,9 +37,12 @@ Hier een lijst met de tools & technieken.
 
 Tools
 - Visual Studio Code (Code editor)
+- Firebase (Hosting)
 - Polypane (Browser)
 
 Technieken
+- Express JS (Framework)
+- Embedded JavaScript templating (Javascript Build Tool)
 - Font Awesome (Icons)
 - NPM (Package manager)
 - HTML (Markup)

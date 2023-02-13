@@ -90,7 +90,8 @@ body > header {
 	background-color: var(--primary-color);
 	display: flex;
 	justify-content: space-between;
-	padding: var(--spacing) var(--spacing) 0 var(--spacing);
+	padding-inline: var(--body-padding);
+	padding-top: var(--spacing);
 }
 
 body > main {
@@ -200,29 +201,37 @@ main::after {
 /*  Media queries */
 
 /* - Small */
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-sm);
 	}
 }
 
 /* - Medium */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-md);
 	}
 }
 
 /* - Large */
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-lg);
 	}
 }
 
 /* - Extra Large */
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-xl);
+	}
+}
+
+
+/* - Extra Extra Large */
+@media (min-width: 90rem) {
+	:root {
+		--max-screen-width: var(--breakpoint-xxl);
 	}
 }

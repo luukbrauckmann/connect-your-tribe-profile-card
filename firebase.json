@@ -1,5 +1,5 @@
 {
-	"functions": [
+  "functions": [
     {
       "source": ".",
       "codebase": "visitekaart",
@@ -12,16 +12,18 @@
     }
   ],
   "hosting": {
-		"site": "visitekaart-luukbrauckmann",
+    "site": "visitekaart-luukbrauckmann",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-		"rewrites": [{
-			"source": "**",
-			"function": "app"
-		}]
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "app"
+      }
+    ]
   }
 }

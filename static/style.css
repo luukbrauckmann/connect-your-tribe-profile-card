@@ -164,7 +164,7 @@ main::after {
 	pointer-events: none;
 }
 
-.button > .button__icon {
+.button .button__icon {
 	width: 1em;
 	height: 1em;
 }
@@ -204,6 +204,16 @@ main::after {
 @media (min-width: 36rem) {
 	:root {
 		--max-screen-width: var(--breakpoint-sm);
+	}
+
+	.card__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	.card__content img {
+		display: block;
 	}
 }
 
